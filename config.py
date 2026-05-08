@@ -3,7 +3,7 @@ import os
 # LangSmith tracing (optional)
 os.environ["LANGCHAIN_PROJECT"] = "my-rag-app"
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-PAT_TOKEN = os.getenv("GITHUB_PAT")
+os.environ["LANGSMITH_API_KEY"] = "your langsmith API_KEY"
 
 # Paths
 PDF_PATHS = [
