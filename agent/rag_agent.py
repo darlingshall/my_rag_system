@@ -8,10 +8,10 @@ def create_rag_agent(chat_model, vector_store):
     @dynamic_prompt
     def prompt_with_context(request: ModelRequest) -> str:
         last_query = request.state["messages"][-1].text
-        print(f"? 用户问题: {last_query}")
+        print(f"用户问题: {last_query}")
 
         retrieved_docs = vector_store.similarity_search(last_query, k=3)
-        print(f"? 检索到 {len(retrieved_docs)} 篇文档")
+        print(f"🔍 检索到 {len(retrieved_docs)} 篇文档")
         for i, doc in enumerate(retrieved_docs):
             print(f"  [{i + 1}] {doc.page_content[:100]}...")
 
