@@ -21,11 +21,11 @@ def main():
     agent = create_rag_agent(chat_model, vector_store)  # ← 关键：传入 vector_store
 
     # === 保留你原有的聊天循环（完全不变）===
-    print("\n? RAG Chatbot is ready! Type 'exit' or 'quit' to stop.\n")
+    print("\n🤖  RAG Chatbot is ready! Type 'exit' or 'quit' to stop.\n")
     messages = []
     while True:
         try:
-            user_input = input("? You: ").strip()
+            user_input = input("👤 You: ").strip()
             if not user_input or user_input.lower() in {"exit", "quit"}:
                 print("👋 Bye!")
                 break
