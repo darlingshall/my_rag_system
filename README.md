@@ -73,12 +73,29 @@ python rag_agent.py
 编辑
 
 ```
-1Linux-RAG-Agent/
-2├── rag_agent.py          # 主程序入口
-3├── config.py             # 项目配置文件
-4├── requirements.txt      # Python 依赖列表
-5├── docs/                 # 【放你的PDF文档在这里】
-6└── .gitignore            # Git 忽略规则 (已排除向量数据库等大文件)
+my_rag_system/
+├── agent/
+│   └── rag_agent.py
+├── config.py                                      # 项目配置文件
+├── data/
+│   ├── chroma.sqlite3
+│   └── d59458cf-4158-4711-b067-cf3725887527/
+│       ├── data_level0.bin
+│       ├── header.bin
+│       ├── index_metadata.pickle
+│       ├── length.bin
+│       └── link_lists.bin
+├── loaders/
+│   └── pdf_loader.py
+├── main.py                                        # 主程序入口
+├── models/
+│   ├── embeddings.py
+│   └── llm.py
+├── README.md
+├── requirements.txt                              # Python 依赖列表
+└── vectorstore/
+    └── chroma_store.py
+
 ```
 
 #### **致谢**
