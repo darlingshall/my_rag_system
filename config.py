@@ -12,7 +12,7 @@ PDF_PATHS = [
 ]
 
 LOCAL_LLM_DIR = "/home/ubuntu/PyCharmMiscProject/AI/models/microsoft-Phi-3-mini-4k-instruct"
-EMBEDDING_MODEL_DIR = "/home/ubuntu/PyCharmMiscProject/AI/models/models--sentence-transformers--paraphrase-multilingual-mpnet-base"
+EMBEDDING_MODEL_DIR = "/home/ubuntu/PyCharmMiscProject/AI/models/ls"
 VECTOR_DB_PATH = "/home/ubuntu/PyCharmMiscProject/my_rag_system/data"
 COLLECTION_NAME = "example_collection"
 
