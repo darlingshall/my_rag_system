@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+# 忽略所有.idea目录下的文件
+.idea/
+# 可选：如果还需要忽略其他IDE相关文件，可以继续添加
+*.iml
+config.py
