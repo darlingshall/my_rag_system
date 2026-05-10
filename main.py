@@ -1,10 +1,8 @@
 # main.py
-from loaders.pdf_loader import load_and_split_pdfs
-from vectorstore.chroma_store import get_or_create_vectorstore, update_vectorstore_with_pdfs
+from vectorstore.chroma_store import update_vectorstore_with_pdfs
 from models.llm import create_llm
 from agent.rag_agent import create_rag_agent
 import os, sys
-from config import VECTOR_DB_PATH  # 确保定义了路径，如 "./chroma_db"
 
 def main():
 
