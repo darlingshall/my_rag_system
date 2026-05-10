@@ -10,11 +10,11 @@ def generate_chunk_id(doc):
     source = doc.metadata.get("source", "unknown")
     start_index = doc.metadata.get("start_index", 0)
     # 方法1：简单拼接（够用）
-    return f"{os.path.basename(source)}_{start_index}"
+    # return f"{os.path.basename(source)}_{start_index}"
 
     # 方法2（更健壮）：用内容哈希（防止同一位置内容变了但 ID 不变）
-    # content_hash = hashlib.md5(doc.page_content.encode()).hexdigest()[:8]
-    # return f"{os.path.basename(source)}_{start_index}_{content_hash}"
+    content_hash = hashlib.md5(doc.page_content.encode()).hexdigest()[:8]
+    return f"{os.path.basename(source)}_{start_index}_{content_hash}"
 
 
 def load_and_split_pdfs():

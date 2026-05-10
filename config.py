@@ -3,7 +3,7 @@ import os
 # LangSmith tracing (optional)
 os.environ["LANGCHAIN_PROJECT"] = "my-rag-app"
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGSMITH_API_KEY"] = "your langsmith API_KEY"
+os.environ["LANGSMITH_API_KEY"] = "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"
 
 # Paths
 PDF_PATHS = [
@@ -12,7 +12,7 @@ PDF_PATHS = [
 ]
 
 LOCAL_LLM_DIR = "/home/ubuntu/PyCharmMiscProject/AI/models/microsoft-Phi-3-mini-4k-instruct"
-EMBEDDING_MODEL_DIR = "/home/ubuntu/PyCharmMiscProject/AI/models/ls"
+EMBEDDING_MODEL_DIR = "/home/ubuntu/PyCharmMiscProject/AI/models/models--sentence-transformers--paraphrase-multilingual-mpnet-base"
 VECTOR_DB_PATH = "/home/ubuntu/PyCharmMiscProject/my_rag_system/data"
 COLLECTION_NAME = "example_collection"
 
